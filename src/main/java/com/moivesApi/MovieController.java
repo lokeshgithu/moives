@@ -17,7 +17,7 @@ public class MovieController {
 
     @Autowired
     private MovieService service;
-
+//hgyujyu
     @GetMapping
     public ResponseEntity<List<Movie>> getMovies() {
         return new ResponseEntity<List<Movie>>(service.findAllMovies(), HttpStatus.OK);
